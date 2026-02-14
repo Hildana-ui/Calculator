@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 65px;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 30px;
+    max-width: 520px;
+}
+
+button {
+    width: 100px;
+    height: 90px;
+}
+
+.empty {
+    width: 100px;
+    height: 90px;
+    border: 1px solid black;
+}
+
+.display {
+    display: flex;
+    align-self: self-end;
+}
+
+.operations {
+    
+}
+
+.operands {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.operators {}
