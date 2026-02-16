@@ -124,3 +124,34 @@ function operate(a, operator, b) {
         return "ERROR";
     }
 };
+
+function handleBackspace() {
+    if (operator === null) {
+        if (a.length > 1) {
+            a = a.slice(0, -1);
+        } else {
+            a = "";
+        }
+
+        display.textContent = a || "0";
+    } else {
+        if (b.length > 1) {
+            b = b.slice(0, -1);
+        } else {
+            b = "";
+        }
+
+        display.textContent = b || "0";
+    }
+    resetDisplay = false;
+};
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Backspace") {
+        handleBackspace();
+    }
+});
+
+
+const backspaceBtn = document.querySelector(".backspace");
+backspaceBtn.addEventListener("click",  handleBackspace);

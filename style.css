@@ -3,30 +3,58 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
+    background-color: #0a192f;
+    margin: 0px;
 }
 
 .container {
+    color: #e6f1ff;
     padding: 30px;
     display: flex;
-    gap: 40px;
     flex-direction: column;
     border: 1px solid black;
     border-radius: 30px;
-    max-width: 520px;
-    background: lightblue;
+    max-width: 510px;
+    background-color: #112240;
+    box-shadow: 
+      0 0 5px #39ff14,
+      0 0 9px #39ff14,
+      0 0 12px #39ff14;
 }
 
 button {
     height: 90px;
-    font-size: 20px;
-    border-radius: 20px;
+    font-size: 30px;
+    border-radius: 25px;
+    background-color: #2ecc40;
+    border: 1px solid #2ecc40;
+    cursor: pointer;
+    transition: 0.2s ease;
+    color: #e6f1ff
+;
 }
 
+button:hover {
+  box-shadow:
+    0 0 5px #2ecc40,
+    0 0 15px #2ecc40,
+    0 0 30px #2ecc40;
+}
+
+
 #display {
+    margin-bottom: 30px;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 70px;
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: 15px;
+    border: 1px solid #39ff14;
+    box-shadow: 
+      0 0 5px #39ff14,
+      0 0 10px #39ff14,
+      0 0 20px #39ff14;
     width: 100%;
     padding: 5px;
 }
@@ -36,4 +64,16 @@ button {
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: repeat(4, 100px);
     gap: 10px;
+}
+
+.backspace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 90px;
+    font-size: 30px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 18px;
 }
